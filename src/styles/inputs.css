@@ -1,1 +1,94 @@
+/* Gene category section styles */
+.category-section {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
 
+.category-button {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+}
+
+.category-button:hover {
+  background: #f3f4f6;
+}
+
+.category-title {
+  font-weight: 500;
+  color: #374151;
+}
+
+.category-content {
+  padding: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Gene select styles */
+.gene-select {
+  margin-bottom: 16px;
+}
+
+.gene-label {
+  display: block;
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.gene-dropdown {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #1f2937;
+  background-color: white;
+}
+
+.gene-dropdown:focus {
+  outline: 2px solid #4f46e5;
+  outline-offset: -1px;
+  border-color: #4f46e5;
+}
+
+/* Horse input section styles */
+.horse-input {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.horse-input-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+/* Gene grid layout */
+.gene-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .gene-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .horse-input {
+    padding: 16px;
+  }
+}
