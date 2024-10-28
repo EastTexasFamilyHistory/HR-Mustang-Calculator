@@ -1,1 +1,118 @@
+/* Results container styles */
+.results-container {
+  margin-top: 20px;
+}
 
+/* Individual result item styles */
+.result-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+/* Result header styles */
+.result-header {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  border: none;
+  cursor: pointer;
+}
+
+.result-header:hover {
+  background: #f3f4f6;
+}
+
+.result-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.color-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.probability-badge {
+  background: #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* Genotype list styles */
+.genotype-list {
+  padding: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.genotype-header {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.genotype-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f9fafb;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.genotype-item:last-child {
+  margin-bottom: 0;
+}
+
+.genotype-code {
+  font-family: monospace;
+  font-size: 14px;
+  color: #374151;
+}
+
+.genotype-probability {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Chevron icon styles */
+.chevron {
+  color: #6b7280;
+}
+
+/* Hover effects */
+.result-header:hover .color-name {
+  color: #4f46e5;
+}
+
+.genotype-item:hover {
+  background: #f3f4f6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .result-header {
+    padding: 12px;
+  }
+  
+  .color-name {
+    font-size: 14px;
+  }
+  
+  .genotype-list {
+    padding: 12px;
+  }
+  
+  .genotype-code {
+    font-size: 12px;
+  }
+}
